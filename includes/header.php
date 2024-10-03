@@ -59,7 +59,8 @@
             </ul>
             <!-- <p class="social"><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p> -->
             <div class="copyright text-center text-md-left">
-              <p class="credit">&copy;2019 | 
+              <p class="credit">&copy;<? echo date("Y"); ?>
+ | 
                 <a href="https://www.linkedin.com/in/vipin-cheriyanveetil/" target="_blank">Vipin Cheriyanveetil 
                 </a>| Template by <a href="http://bootstrapious.com/portfolio-themes" class="external">Bootstrapious.com</a></p>
               <!-- Please do not remove the backlink to us, unless you support the development at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->

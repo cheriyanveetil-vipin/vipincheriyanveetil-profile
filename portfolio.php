@@ -10,7 +10,7 @@
           
 		 
           <div class="grid row">
-            <div class="col-md-6 col-lg-3 grid-item"> 
+            <!-- <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> <a href="voiceboom.php" title="" class="box-masonry-image with-hover-overlay"><img src="img/projects/voiceboom.png" alt="" class="img-fluid"></a>
                 <div class="box-masonry-hover-text-header"> <a href="voiceboom.php" class="tile-link">  </a>
                   <h4>VoiceBoom</h4>
@@ -19,7 +19,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> <a href="dbpromoter.php" title="" class="box-masonry-image with-hover-overlay"><img src="img/projects/dbpromoter.png" alt="" class="img-fluid"></a>
                 <div class="box-masonry-hover-text-header"> <a href="dbpromoter.php" class="tile-link">  </a>
