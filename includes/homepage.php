@@ -9,7 +9,7 @@
                 <h1>Hello</h1>
                 <!--<p class="lead">An sincerity so extremity he additions. Her yet <strong>there truth merit</strong>. Mrs all projecting favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.</p>-->
 				<p class="lead">
-Am Vipin Cheriyanveetil from India. I am a software engineer with 12 years of software development experience. 
+Am Vipin Cheriyanveetil from India. I am a software engineer with 16 years of software development experience. 
 I have created multiple web applications using various combinations of web technologies during my IT career. 
 I love programming and like being a developer. 
 I sharpen my skills and spend time to learn new technologies. 
@@ -31,8 +31,8 @@ I am a strong Database programmer too
           <button type="button" class="btn btn-primary">Node.js</button>
           <button type="button" class="btn btn-warning">Vue.js</button>
           <button type="button" class="btn btn-dark">Flask</button>
-          <button type="button" class="btn btn-success">C#</button>
-          <button type="button" class="btn btn-danger">Asp.net</button>
+          <button type="button" class="btn btn-success">Django</button>
+          <!-- <button type="button" class="btn btn-danger">Asp.net</button> -->
           
 				  <button type="button" class="btn btn-primary">PHP</button>
           <button type="button" class="btn btn-secondary">Mysql</button>
