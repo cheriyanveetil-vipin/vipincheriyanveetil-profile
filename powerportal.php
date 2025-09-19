@@ -12,17 +12,17 @@
                 <h1>Power Portal</h1>
                 <!-- <p class="lead">This is beautifully crafted web application and a responsive web one developed to help an organisation in USA in their business field of helping autism kids. .</p> -->
                 <blockquote class="blockquote">
-                  <p class="mb-0">A web dashboard developed in vue.js with responsive look and feel . This is for our customers engineers to look and analyse the energy usage within their hotel primises. The dashboard also helps them understand the cost savings they made and helps them all measures to reduce their power usage and can look at various types of charts and analysis. This application is Well supported by highcharts , Bootstrap 4, jquery ect. </p>
+                  <p class="mb-0">A web dashboard developed in react.js with responsive look and feel and node.js as backend api. This is for our customers engineers to look and analyse the energy usage within their hotel primises. The dashboard also helps them understand the cost savings they made and helps them all measures to reduce their power usage and can look at various types of charts and analysis. This application is Well supported by highcharts , Bootstrap 4, jquery ect. </p>
                 </blockquote>
                 <p class="lead">
         <strong>Technologies</strong>
         </p>
         <p>
-          <button type="button" class="btn btn-warning">Vue.js</button>
-          <button type="button" class="btn btn-dark">PHP Slim Web API</button>
+          <button type="button" class="btn btn-warning">React.js</button>
+          <button type="button" class="btn btn-dark">Node.js</button>
           <button type="button" class="btn btn-success">Mysql</button>
           <button type="button" class="btn btn-danger">Bootstrap 4</button>
-        <button type="button" class="btn btn-primary">jQuery</button>
+        <button type="button" class="btn btn-primary">Python</button>
         <button type="button" class="btn btn-danger">Highcharts</button>
         <button type="button" class="btn btn-info">JavaScript</button>
 

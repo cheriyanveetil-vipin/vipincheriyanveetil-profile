@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Vipin Cheriyanveetil : Full Stack Software Developer : vue.js, react.js, asp.net MVC, C#, Mysql, Sql Server</title>
-  <meta name="description" content="Vipin Cheriyanveetil : A Software Developer : Asp.net, C#, vue.js. Online Programming training on vue.js, angular, mvc , sql ect, Learn vue.js, learn angular, learn MVC, learn ios app development">
-  <meta name="keywords" content="Dot net developer, Programmer, Full Stack Developer, Asp.net, C#, vue.js, Software Programmer, Vipin Cheriyanveetil, Vipin C, Online Programming training on vue.js, angular, mvc , sql ect. Learn vue.js, learn angular, learn MVC, learn ios app development">
+  <title>Vipin Cheriyanveetil | Full Stack Developer – Python, React, Node.js, Django</title>
+  <meta name="description" content="Vipin Cheriyanveetil is a Full Stack Developer specializing in Python, TypeScript, React, Node.js, Flask, Django, and Next.js.">
+<meta name="keywords" content="Full Stack Developer, Python, TypeScript, React, Node.js, Flask, Django, Next.js">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <!-- Bootstrap CSS-->
@@ -52,7 +52,7 @@
         <li class="sidebar-item"><a href="portfolio.php?r=1" class="sidebar-link">Portfolio</a></li>
         <li class="sidebar-item"><a href="resume.php" class="sidebar-link">Resume</a></li>
                 <!-- Link-->
-                <li class="sidebar-item"><a href="courses.php?r=1" class="sidebar-link">Learn to code</a></li>
+                <!-- <li class="sidebar-item"><a href="courses.php?r=1" class="sidebar-link">Learn to code</a></li> -->
                 <li class="sidebar-item"><a href="contact.php" class="sidebar-link">Get in touch</a></li>
                 <li class="sidebar-item"><a href="blog.php" class="sidebar-link">Blog Posts</a></li>
                 <!-- <li class="sidebar-item"><a href="github.php" class="sidebar-link">Github</a></li> -->

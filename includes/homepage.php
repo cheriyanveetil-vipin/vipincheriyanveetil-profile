@@ -25,24 +25,33 @@ I am a strong Database programmer too
 				<strong>My techical stack would include</strong>
 				</p>
 
-				<div>
-          <button type="button" class="btn btn-danger">Python</button>
-          <button type="button" class="btn btn-info">React.js</button>
-          <button type="button" class="btn btn-primary">Node.js</button>
-          <button type="button" class="btn btn-warning">Vue.js</button>
-          <button type="button" class="btn btn-dark">Flask</button>
-          <button type="button" class="btn btn-success">Django</button>
-          <!-- <button type="button" class="btn btn-danger">Asp.net</button> -->
-          
-				  <button type="button" class="btn btn-primary">PHP</button>
-          <button type="button" class="btn btn-secondary">Mysql</button>
+			<style>
+  .btn-purple { background-color: #6f42c1; color: white; }
+  .btn-orange { background-color: #fd7e14; color: white; }
+  .btn-teal { background-color: #20c997; color: white; }
+  .btn-pink { background-color: #d63384; color: white; }
 
-          <button type="button" class="btn btn-info">REST API</button>
+  /* Extra vertical + horizontal spacing */
+  .skill-buttons > * {
+    margin: 6px; /* adds spacing in all directions */
+  }
+</style>
 
-<!-- <button type="button" class="btn btn-danger">Flask</button>
+<div class="d-flex flex-wrap skill-buttons mb-3">
+  <button class="btn btn-danger rounded-pill">Python</button>
+  <button class="btn btn-info rounded-pill">React.js</button>
+  <button class="btn btn-primary rounded-pill">Node.js</button>
+  <button class="btn btn-warning rounded-pill">Next.js</button>
+  <button class="btn btn-dark rounded-pill">Flask</button>
+  <button class="btn btn-success rounded-pill">Django</button>
+  <button class="btn btn-purple rounded-pill">PHP</button>
+  <button class="btn btn-orange rounded-pill">MySQL</button>
+  <button class="btn btn-teal rounded-pill">PostgreSQL</button>
+  <button class="btn btn-pink rounded-pill">REST API</button>
+</div>
 
-<button type="button" class="btn btn-light">Asp.net MVC</button> -->
-				</div>
+
+
          
                     <!--<div class="skill-item">
                       <div class="progress-title">PHP</div>
