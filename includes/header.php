@@ -1,69 +1,71 @@
+<?php
+$siteUrl = 'https://www.vipincheriyanveetil.in';
+
+$pageTitle = $pageTitle ?? 'Vipin Cheriyanveetil | AI Full Stack Developer';
+$pageDescription = $pageDescription ?? 'Vipin Cheriyanveetil is an AI Full Stack Developer specializing in generative AI, LLM integration, Python, React, Node.js, Flask, and Django.';
+$canonicalPath = $canonicalPath ?? 'index.php';
+$canonicalUrl = $siteUrl . '/' . ltrim($canonicalPath, '/');
+$ogImage = $siteUrl . '/' . ltrim($ogImage ?? 'img/about.jpg', '/');
+$pageRobots = $pageRobots ?? 'index,follow';
+?>
 <!DOCTYPE html>
-<html>
-</html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Vipin Cheriyanveetil | Full Stack Developer – Python, React, Node.js, Django</title>
-  <meta name="description" content="Vipin Cheriyanveetil is a Full Stack Developer specializing in Python, TypeScript, React, Node.js, Flask, Django, and Next.js.">
-<meta name="keywords" content="Full Stack Developer, Python, TypeScript, React, Node.js, Flask, Django, Next.js">
+  <title><?php echo htmlspecialchars($pageTitle); ?></title>
+  <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
+  <meta name="keywords" content="AI Full Stack Developer, Generative AI, LLM, OpenAI API, Python, TypeScript, React, Node.js, Flask, Django, Next.js, Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <!-- Bootstrap CSS-->
-  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <meta name="robots" content="<?php echo htmlspecialchars($pageRobots); ?>">
+  <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl); ?>">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vipin Cheriyanveetil">
+  <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
+  <meta property="og:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
+  <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl); ?>">
+  <meta property="og:image" content="<?php echo htmlspecialchars($ogImage); ?>">
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
+  <meta name="twitter:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
+  <meta name="twitter:image" content="<?php echo htmlspecialchars($ogImage); ?>">
+  <!-- Bootstrap 5 CSS (jsDelivr CDN, pinned + SRI-verified)-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Font Awesome CSS-->
-  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
   <!-- Google fonts - Roboto-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
-  <!-- owl carousel-->
-  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
-  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
   <!-- theme stylesheet-->
-  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <link rel="stylesheet" href="/css/style.default.css" id="theme-stylesheet">
   <!-- Custom stylesheet - for your changes-->
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="/css/custom.css">
   <!-- Favicon-->
-  <link rel="shortcut icon" href="img/favicon.png">
-  <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-	
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800,900%7cRaleway:300,400,500,600,700" rel="stylesheet">
-
+  <link rel="shortcut icon" href="/img/favicon.png">
 </head>
-<body>
-  <div id="all">
-    <div class="container-fluid">
-      <div class="row row-offcanvas row-offcanvas-left"> 
-        <!--   *** SIDEBAR ***-->
-        <div id="sidebar" class="col-md-4 col-lg-2 sidebar-offcanvas">
-          <div class="sidebar-content">
-            <h1 class="sidebar-heading"> <a href="index.php">Vipin Cheriyanveetil</a></h1>
-            <p class="sidebar-p">Full Stack Developer</p>
-            <!--<p class="sidebar-p">Originally from Toronto, currently based in London. </p>-->
-            <ul class="sidebar-menu">
-                <!-- Link-->
-                <!-- <li class="sidebar-item"><a href="index.php" class="sidebar-link active">Home</a></li> -->
-                <!-- Link-->
-                <li class="sidebar-item"><a href="index.php" class="sidebar-link">About</a></li>
-				<!-- <li class="sidebar-item"><a href="courses.php" class="sidebar-link">Course</a></li>
-				<li class="sidebar-item"><a href="services.php" class="sidebar-link">Services</a></li> -->
-        <li class="sidebar-item"><a href="portfolio.php?r=1" class="sidebar-link">Portfolio</a></li>
-        <li class="sidebar-item"><a href="resume.php" class="sidebar-link">Resume</a></li>
-                <!-- Link-->
-                <!-- <li class="sidebar-item"><a href="courses.php?r=1" class="sidebar-link">Learn to code</a></li> -->
-                <li class="sidebar-item"><a href="contact.php" class="sidebar-link">Get in touch</a></li>
-                <li class="sidebar-item"><a href="blog.php" class="sidebar-link">Blog Posts</a></li>
-                <!-- <li class="sidebar-item"><a href="github.php" class="sidebar-link">Github</a></li> -->
-            </ul>
-            <!-- <p class="social"><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p> -->
-            <div class="copyright text-center text-md-left">
-              <p class="credit">&copy;<? echo date("Y"); ?>
- | 
-                <a href="https://www.linkedin.com/in/vipin-cheriyanveetil/" target="_blank">Vipin Cheriyanveetil 
-                </a>| Template by <a href="http://bootstrapious.com/portfolio-themes" class="external">Bootstrapious.com</a></p>
-              <!-- Please do not remove the backlink to us, unless you support the development at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->
-            </div>
-          </div>
+<body class="d-flex flex-column min-vh-100">
+  <!--   *** TOP NAVBAR ***-->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="/index.php">Vipin Cheriyanveetil <span class="badge rounded-pill navbar-brand-tag">AI Full Stack Developer</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="/index.php" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="/portfolio.php" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="/resume.php" class="nav-link">Resume</a></li>
+            <li class="nav-item"><a href="/contact.php" class="nav-link">Get in touch</a></li>
+            <li class="nav-item"><a href="/blog.php" class="nav-link">Blog Posts</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
+  <!--   *** MAIN CONTENT ***-->
+  <main class="flex-grow-1 white-background">
+    <div class="container">
+      <div class="content-column-content">

@@ -1,17 +1,14 @@
-
-
-</div>
+      </div><!-- /.content-column-content -->
+    </div><!-- /.container -->
+  </main>
+  <!--   *** FOOTER ***-->
+  <footer class="site-footer">
+    <div class="container d-flex justify-content-center justify-content-md-start align-items-center">
+      <p class="mb-0">&copy;<?php echo date("Y"); ?> <a href="https://www.linkedin.com/in/vipin-cheriyanveetil/" target="_blank">Vipin Cheriyanveetil</a></p>
+    </div>
+  </footer>
   <!-- JavaScript files-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper.js/umd/popper.min.js"> </script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
-  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="vendor/masonry-layout/masonry.pkgd.min.js"></script>
-  <script src="js/front.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

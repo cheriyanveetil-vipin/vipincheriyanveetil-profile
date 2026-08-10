@@ -1,8 +1,10 @@
-version: "3"
 services:
-  php-app:
+  portfolio:
     build: .
+    container_name: vipin-portfolio
     ports:
       - "8080:80"
     volumes:
+      # Bind-mount the project so edits on your machine show up on refresh, no rebuild needed.
       - .:/var/www/html
+    restart: unless-stopped

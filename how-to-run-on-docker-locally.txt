@@ -1,0 +1,30 @@
+Run this portfolio locally with Docker
+=======================================
+
+Recommended: Docker Compose (handles build + run + live-reload volume for you)
+--------------------------------------------------------------------------
+  docker compose up --build       # build the image and start the container
+  docker compose up -d --build    # same, but detached (runs in the background)
+  docker compose down             # stop and remove the container
+  docker compose logs -f          # tail the container's logs
+  docker compose restart          # restart without rebuilding
+
+  Then open: http://localhost:8080
+
+  Because docker-compose.yml bind-mounts the project folder into the
+  container, editing any .php/.css file and refreshing the browser is
+  enough to see the change -- no rebuild needed unless you change the
+  Dockerfile itself.
+
+Plain Docker (no compose)
+--------------------------
+  docker build -t vipin-portfolio .
+  docker run -d -p 8080:80 --name vipin-portfolio vipin-portfolio
+  # open http://localhost:8080
+  docker stop vipin-portfolio && docker rm vipin-portfolio
+
+Troubleshooting
+----------------
+  docker compose ps                       # check container status/health
+  docker compose exec portfolio bash      # shell into the running container
+  docker compose up --build --force-recreate   # clean rebuild if things look stale

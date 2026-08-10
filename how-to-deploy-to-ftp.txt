@@ -1,0 +1,144 @@
+How to deploy this site to production via FTP
+===============================================
+
+This site is hosted on shared hosting. The FTP account's login lands
+directly inside the site's document root, whose absolute path on the
+server is:
+
+  /home/hjflfnah/domains/vipincheriyanveetil.in/public_html/
+
+...but from the FTP session itself, that same location is just "/".
+The deploy script (deploy_ftp.py) already knows this and uses "/".
+
+Connection details
+-------------------
+  Host : vipincheriyanveetil.in
+  User : ftp@vipincheriyanveetil.in
+  Pass : (see "Set your password" below - never stored in this repo)
+
+
+ONE-TIME SETUP
+================
+
+1. Save your FTP password to a local file that stays OUTSIDE this git
+   repo (so it never gets committed). In Terminal:
+
+     echo 'FTP_PASSWORD=your-actual-password' > ~/.ftp_deploy_env
+     chmod 600 ~/.ftp_deploy_env
+
+   Do this again any time you change the FTP password.
+
+2. deploy_ftp.py needs no installation - it only uses Python's built-in
+   ftplib, which ships with macOS.
+
+
+EVERY TIME YOU DEPLOY
+========================
+
+1. Open Terminal and go to the project folder:
+
+     cd "/Users/vipincheriyanveetil/factory/vipin/personalprojects/github/vipincheriyanveetil-profile"
+
+2. Set the connection env vars and load your saved password:
+
+     export FTP_HOST="vipincheriyanveetil.in"
+     export FTP_USER="ftp@vipincheriyanveetil.in"
+     source ~/.ftp_deploy_env
+
+3. (Optional but recommended) See what's currently live on the server:
+
+     python3 deploy_ftp.py --list
+
+4. Dry run - prints exactly what would be deleted and uploaded, changes
+   nothing. Always do this before a real deploy:
+
+     python3 deploy_ftp.py --dry-run
+
+   Review the output:
+     - Every file it plans to DELETE on the server (the old version of
+       the site) should look expected - no surprises.
+     - Every file it plans to UPLOAD (the new version, from your local
+       folder) should look complete.
+     - The "ftp/" folder on the server should show as
+       "[preserved, not touched]" - it is never deleted.
+
+5. Once the dry run looks right, run it for real:
+
+     python3 deploy_ftp.py
+
+   This will:
+     a) Delete everything currently under the remote site root, except
+        the preserved "ftp/" folder.
+     b) Upload every file from this local folder to the remote site
+        root, except the files listed under "What never gets uploaded"
+        below.
+
+   The site will be briefly unavailable (a minute or two, depending on
+   number of files) while step (a) and (b) run, since the old files are
+   gone before the new ones finish uploading.
+
+6. Verify the live site after it finishes:
+
+     curl -s -o /dev/null -w "%{http_code}\n" https://www.vipincheriyanveetil.in/index.php
+     curl -s -o /dev/null -w "%{http_code}\n" https://www.vipincheriyanveetil.in/project/dbpromoter.php
+
+   Both should print 200. Then open the site in a browser and click
+   around (home, portfolio, a couple of project pages, blog) to be sure
+   everything looks right.
+
+
+WHAT NEVER GETS UPLOADED
+===========================
+These stay local-only (dev/repo files with no reason to be on the
+public web server):
+
+  .git/
+  .DS_Store
+  README.md
+  Dockerfile
+  docker-compose.yml
+  docker_commands.txt
+  .dockerignore
+  composer.json
+  .gitignore
+  deploy_ftp.py   (this script itself)
+
+To change this list, edit EXCLUDE_NAMES near the top of deploy_ftp.py.
+
+
+WHAT NEVER GETS DELETED ON THE SERVER
+========================================
+  ftp/   - an empty folder that already existed on the server before
+           this deploy setup; not part of the local repo, left alone
+           on every run.
+
+To change this, edit REMOTE_PRESERVE_NAMES near the top of
+deploy_ftp.py.
+
+
+TROUBLESHOOTING
+==================
+
+"socket.gaierror: nodename nor servname provided" when connecting
+  -> DNS isn't resolving right now. Test with:
+       nslookup vipincheriyanveetil.in
+     If that also fails, it's a local network/DNS issue (check Wi-Fi,
+     VPN, or try switching your Mac's DNS servers to 8.8.8.8 / 1.1.1.1
+     in System Settings > Network > Details > DNS), not a problem with
+     the script or the FTP account.
+
+"ERROR: set FTP_HOST, FTP_USER, FTP_PASSWORD environment variables
+first" when running the script
+  -> You're in a different terminal window/tab than the one where you
+     ran the export/source commands in step 2 above, or you closed and
+     reopened Terminal since. Re-run step 2 in the SAME window you're
+     about to run deploy_ftp.py from.
+
+Login denied / access denied errors
+  -> Double check the password saved in ~/.ftp_deploy_env is current
+     (see "One-time setup" step 1 above - redo it if you've changed
+     the FTP password since).
+
+Never paste the FTP password directly into a chat with an AI assistant
+or anywhere else outside of ~/.ftp_deploy_env - that file is the only
+place it should live on this machine.

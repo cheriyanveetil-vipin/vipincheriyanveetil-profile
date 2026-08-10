@@ -1,6 +1,288 @@
 .card {
   margin-bottom: 2rem;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/*
+    Top navbar
+*/
+.site-header {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.site-header .navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #111 !important;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+}
+
+.navbar-brand-tag {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #198754;
+}
+
+.navbar-nav .nav-link {
+  color: #555;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #ef5285;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0.5rem;
+    height: 2px;
+    background: #ef5285;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+  }
+
+  .navbar-nav .nav-link:hover::after,
+  .navbar-nav .nav-link:focus::after {
+    transform: scaleX(1);
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.4rem 0.6rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(239, 82, 133, 0.25);
+}
+
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.85rem 0.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  main .content-column-content {
+    padding: 1.75rem 0;
+  }
+
+  .site-footer .container {
+    text-align: center;
+  }
+}
+
+/*
+    Main content area
+*/
+main.white-background {
+  background: #fff;
+}
+
+main .content-column-content {
+  padding: 2.5rem 0;
+}
+
+main .content-column-content h1 {
+  font-size: 2.25rem;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 767.98px) {
+  main .content-column-content h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/*
+    Footer
+*/
+.site-footer {
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 1.25rem 0;
+  font-size: 0.875rem;
+  color: #999;
+}
+
+.site-footer a {
+  color: #999;
+}
+
+.site-footer a:hover {
+  color: #ef5285;
+}
+
+/*
+    Project screenshot carousels
+*/
+.carousel-item img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  background-color: #f5f5f5;
+}
+
+/* Default Bootstrap arrows are plain white icons that disappear against
+   light-background screenshots - give them a solid dark badge so they're
+   visible over any image. */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0.6rem;
+  background-color: rgba(17, 17, 17, 0.45);
+  background-size: 60%;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(239, 82, 133, 0.85);
+}
+
+/*
+    Portfolio project cards - image by default, name + description fade in
+    on top of the (dimmed) image on hover/focus
+*/
+.project-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: var(--bs-border-radius, 0.375rem);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease;
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-thumb {
+  display: block;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: cover;
+  background-color: #f5f5f5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover .project-thumb,
+.project-card:focus-visible .project-thumb {
+  opacity: 0.25;
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 1.25rem;
+  background: rgba(10, 10, 10, 0.85);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow-y: auto;
+}
+
+.project-card:hover .project-overlay,
+.project-card:focus-visible .project-overlay {
+  opacity: 1;
+}
+
+.project-card .project-overlay-title {
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+}
+
+.project-overlay-divider {
+  width: 100%;
+  height: 2px;
+  margin: 0 0 0.75rem;
+  background-color: #fff;
+  opacity: 0.5;
+  border: 0;
+}
+
+.project-card .project-overlay-text {
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/*
+    Technology / skill badges
+*/
+.skill-badges {
+  gap: 0.5rem;
+}
+
+.skill-badges .badge {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.55em 0.9em;
+  border: 1px solid transparent;
+}
+
+.bg-purple-subtle { background-color: #efe6fb; }
+.text-purple-emphasis { color: #5a32a3; }
+
+.bg-orange-subtle { background-color: #ffe9d6; }
+.text-orange-emphasis { color: #b35900; }
+
+.bg-teal-subtle { background-color: #d7f7ef; }
+.text-teal-emphasis { color: #0f7a5c; }
+
+.bg-pink-subtle { background-color: #fbe0ee; }
+.text-pink-emphasis { color: #b02469; }
 
 
 .social:hover {

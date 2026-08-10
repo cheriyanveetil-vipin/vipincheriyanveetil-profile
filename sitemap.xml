@@ -1,77 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
+  <loc>https://www.vipincheriyanveetil.in/index.php</loc>
+  <lastmod>2026-08-10</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/index.php</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
+  <loc>https://www.vipincheriyanveetil.in/portfolio.php</loc>
+  <lastmod>2026-08-10</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.vipincheriyanveetil.in/resume.php</loc>
+  <lastmod>2026-08-10</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/portfolio.php</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
+  <loc>https://www.vipincheriyanveetil.in/contact.php</loc>
+  <lastmod>2026-08-10</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/resume.php</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
+  <loc>https://www.vipincheriyanveetil.in/blog.php</loc>
+  <lastmod>2026-08-10</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/courses.php</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://www.vipincheriyanveetil.in/courses.php</loc>
+  <lastmod>2026-08-10</lastmod>
+  <priority>0.60</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/contact.php</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://www.vipincheriyanveetil.in/github.php</loc>
+  <lastmod>2026-08-10</lastmod>
+  <priority>0.50</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/powerportal.php</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
+  <loc>https://www.vipincheriyanveetil.in/project/goodtools.php</loc>
+  <lastmod>2026-08-10</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.vipincheriyanveetil.in/project/powerportal.php</loc>
+  <lastmod>2026-08-10</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/gowatt.php</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
+  <loc>https://www.vipincheriyanveetil.in/project/dbpromoter.php</loc>
+  <lastmod>2026-08-10</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/allyone.php</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
+  <loc>https://www.vipincheriyanveetil.in/project/gowatt.php</loc>
+  <lastmod>2026-08-10</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/taskoooo.php</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
+  <loc>https://www.vipincheriyanveetil.in/project/allyone.php</loc>
+  <lastmod>2026-08-10</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/ebooqs.php</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
+  <loc>https://www.vipincheriyanveetil.in/project/taskoooo.php</loc>
+  <lastmod>2026-08-10</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipincheriyanveetil/donglinked.php</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
+  <loc>https://www.vipincheriyanveetil.in/project/ebooqs.php</loc>
+  <lastmod>2026-08-10</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://strapdesk.com/vipin/profile/</loc>
-  <lastmod>2019-10-31T14:11:50+00:00</lastmod>
+  <loc>https://www.vipincheriyanveetil.in/project/donglinked.php</loc>
+  <lastmod>2026-08-10</lastmod>
   <priority>0.64</priority>
 </url>
-
 
 </urlset>

@@ -1,0 +1,126 @@
+[
+    {
+        "title": "Buddyclaps - By, Vipin Cheriyanveetil",
+        "url": "https:\/\/buddyclaps.com\/"
+    },
+    {
+        "title": "aws | Generate a signed url for S3 object with expiry - Buddyclaps",
+        "url": "https:\/\/buddyclaps.com\/aws-generate-a-signed-url-for-s3-object-with-expiry\/"
+    },
+    {
+        "title": "aws | node.js | S3 file download - Buddyclaps",
+        "url": "https:\/\/buddyclaps.com\/aws-node-js-s3-file-download\/"
+    },
+    {
+        "title": "Javascript | Some unique examples - Buddyclaps",
+        "url": "https:\/\/buddyclaps.com\/javascript-some-unique-examples\/"
+    },
+    {
+        "title": "Python | Generators - Buddyclaps",
+        "url": "https:\/\/buddyclaps.com\/python-generators\/"
+    },
+    {
+        "title": "Vue.js | How to solve vue.js prod build assets relative path problem",
+        "url": "https:\/\/buddyclaps.com\/vue-js-how-to-solve-vue-js-prod-build-assets-relative-path-problem\/"
+    },
+    {
+        "title": "Mysql | \u201cShow Create Table\u201d command",
+        "url": "https:\/\/buddyclaps.com\/mysql-show-create-table-command\/"
+    },
+    {
+        "title": "Translate Seconds into days, hours, minutes and seconds",
+        "url": "https:\/\/buddyclaps.com\/javascript-function-translate-seconds-into-days-hours-minutes-and-seconds\/"
+    },
+    {
+        "title": "postgresql | Reset the Identity value after an on conflict",
+        "url": "https:\/\/buddyclaps.com\/postgresql-reset-the-identity-value-after-an-on-conflict\/"
+    },
+    {
+        "title": "Python | A Database interaction class using pymysql",
+        "url": "https:\/\/buddyclaps.com\/python-a-database-interaction-class-using-pymysql\/"
+    },
+    {
+        "title": "vue.js | How to implement route guard",
+        "url": "https:\/\/buddyclaps.com\/vue-js-how-to-implement-route-guard-in\/"
+    },
+    {
+        "title": "aws | python | boto3 | Delete all objects from a bucket",
+        "url": "https:\/\/buddyclaps.com\/aws-python-delete-all-objects-from-a-bucket\/"
+    },
+    {
+        "title": "A python class to interact with AWS S3 with boto3",
+        "url": "https:\/\/buddyclaps.com\/a-python-class-to-interact-with-aws-s3-with-boto3\/"
+    },
+    {
+        "title": "Javascript | Callbacks, Promises and Async Await",
+        "url": "https:\/\/buddyclaps.com\/javascript-callbacks-promises-async-await\/"
+    },
+    {
+        "title": "Javascript object shorthand",
+        "url": "https:\/\/buddyclaps.com\/javascript-using-object-shorthand-when-debugging\/"
+    },
+    {
+        "title": "mac | Install NVM with different versions of node",
+        "url": "https:\/\/buddyclaps.com\/mac-install-nvm-with-different-versions-of-node\/"
+    },
+    {
+        "title": "JavaScript | Understanding Immediately Invoked Function Expression (IIFE)",
+        "url": "https:\/\/buddyclaps.com\/understanding-immediately-invoked-function-expression-iife\/"
+    },
+    {
+        "title": "Git commands",
+        "url": "https:\/\/buddyclaps.com\/git-comands\/"
+    },
+    {
+        "title": "Postgresql | Understanding the JSON Data Type",
+        "url": "https:\/\/buddyclaps.com\/postgresql-understanding-the-json-data-type\/"
+    },
+    {
+        "title": "Node.js | A function to interact with AWS OpenSearch Serverless",
+        "url": "https:\/\/buddyclaps.com\/node-js-a-function-to-interact-with-aws-opensearch-serverless\/"
+    },
+    {
+        "title": "docker | How to dockerize a simple php application",
+        "url": "https:\/\/buddyclaps.com\/docker-how-to-dockerize-a-simple-php-application\/"
+    },
+    {
+        "title": "Git Revert | Understanding git revert on a Merge Commit (With a Simple Example)",
+        "url": "https:\/\/medium.com\/@vipinc.007\/git-revert-understanding-git-revert-on-a-merge-commit-with-a-simple-example-43bae40a6bab?source=rss-c0832e846650------2"
+    },
+    {
+        "title": "Git Rebase | Understanding git rebase",
+        "url": "https:\/\/medium.com\/@vipinc.007\/git-rebase-understanding-git-rebase-49798474eb7e?source=rss-c0832e846650------2"
+    },
+    {
+        "title": "python | flake8 | how to enforce style consistency across Python projects",
+        "url": "https:\/\/medium.com\/@vipinc.007\/python-flake8-how-to-enforce-style-consistency-across-python-projects-c58ee3eaa813?source=rss-c0832e846650------2"
+    },
+    {
+        "title": "python | how to split the requirements.txt file",
+        "url": "https:\/\/medium.com\/@vipinc.007\/python-how-to-split-the-requirements-txt-file-1365bc187507?source=rss-c0832e846650------2"
+    },
+    {
+        "title": "postgresql | get date diff in days",
+        "url": "https:\/\/medium.com\/@vipinc.007\/postgresql-get-date-diff-in-days-986166f53713?source=rss-c0832e846650------2"
+    },
+    {
+        "title": "docker | How to dockerise a simple php application",
+        "url": "https:\/\/medium.com\/@vipinc.007\/docker-how-to-dockerise-a-simple-php-application-e123fb988846?source=rss-c0832e846650------2"
+    },
+    {
+        "title": "Git | Command Cheatsheet",
+        "url": "https:\/\/medium.com\/@vipinc.007\/git-command-cheatsheet-f2c1daab6ad4?source=rss-c0832e846650------2"
+    },
+    {
+        "title": "JavaScript | Understanding Immediately Invoked Function Expression (IIFE)",
+        "url": "https:\/\/medium.com\/@vipinc.007\/javascript-understanding-immediately-invoked-function-expression-iife-d8b35ee20fd5?source=rss-c0832e846650------2"
+    },
+    {
+        "title": "Postgresql | Understanding the JSON Data Type",
+        "url": "https:\/\/medium.com\/@vipinc.007\/postgresql-understanding-the-json-data-type-e1ca7b20e9ee?source=rss-c0832e846650------2"
+    },
+    {
+        "title": "Node.js | A function to interact with AWS OpenSearch Serverless",
+        "url": "https:\/\/medium.com\/@vipinc.007\/node-js-a-function-to-interact-with-aws-opensearch-serverless-701de8d525d8?source=rss-c0832e846650------2"
+    }
+]
